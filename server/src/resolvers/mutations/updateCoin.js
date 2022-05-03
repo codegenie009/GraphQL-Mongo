@@ -1,6 +1,6 @@
-const { models } = require('mongoose');
+const models = require('../../models');
 
-module.exports = async (_, { id, input }, { models} ) => {
+module.exports = async (_, { id, input }, {} ) => {
     const ERC20CoinToUpdate = await models.ERC20Coin.findOne({_id: id});
 
     Object.keys(input).forEach(value => {
