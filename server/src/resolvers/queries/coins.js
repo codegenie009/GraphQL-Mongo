@@ -1,5 +1,5 @@
-const models = require("../../models");
+const { ERC20Coin }  = require("../../models");
 
-module.exports = async (_, {}, { models }) => {
-    return await models.ERC20Coin.find()
+module.exports = async (_, {}, {}) => {
+    return await ERC20Coin.find()
 }
